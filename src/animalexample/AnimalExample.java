@@ -23,6 +23,12 @@ public class AnimalExample {
 
         System.out.println("Hamster makeSound " + invokeSound(hamster));
         System.out.println("Hamster play" + invokePlay(hamster));
+        
+        //calling eat() method for each animal
+        invokeEat(cat);
+        invokeEat(dog);
+        invokeEat(hamster);
+        
     }
 
     /**
@@ -70,7 +76,7 @@ public class AnimalExample {
             System.out.println(animal.eat());
         }
         else if(animal instanceof Hamster) {
-            System.out.println("Hamster: ");
+            System.out.print("Hamster: ");
             System.out.println(animal.eat());
         }
     }
