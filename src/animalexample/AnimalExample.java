@@ -29,6 +29,14 @@ public class AnimalExample {
         invokeEat(dog);
         invokeEat(hamster);
         
+        //creating instances of Classes implementing the Edible interface
+        Edible chick = new Chicken("Roosty");
+        Edible gala = new Apple();
+        
+        //calling howToEat() method for each Edible object
+        invokeHowToEat(chick);
+        invokeHowToEat(gala);
+        
     }
 
     /**
@@ -78,6 +86,17 @@ public class AnimalExample {
         else if(animal instanceof Hamster) {
             System.out.print("Hamster: ");
             System.out.println(animal.eat());
+        }
+    }
+    
+    public static void invokeHowToEat(Edible object) {
+        if(object instanceof Apple) {
+            System.out.print("Apple: ");
+            System.out.println(object.howToEat());
+        }
+        else if(object instanceof Chicken) {
+            System.out.print("Chicken: ");
+            System.out.println(object.howToEat());
         }
     }
 

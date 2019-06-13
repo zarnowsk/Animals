@@ -1,10 +1,7 @@
 
 package animalexample;
 
-/**
- *
- * @author paulbonenfant
- */
+
 public class Cat extends Animal {
 
     public Cat(String name) {

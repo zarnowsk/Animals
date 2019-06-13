@@ -1,10 +1,7 @@
 
 package animalexample;
 
-/**
- *
- * @author paulbonenfant
- */
+
 public abstract class Animal {
     
     protected String name;
